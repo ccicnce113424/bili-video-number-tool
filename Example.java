@@ -23,11 +23,11 @@ public class Example {
 
     public static String trans(String number) {
         if (number.startsWith("av") || number.startsWith("AV")) {
-            return biliVideoNumberTool.a2b(number);
+            return number + " → " + biliVideoNumberTool.a2b(number);
         } else if (number.matches("[0-9]+")) {
-            return biliVideoNumberTool.a2b(("av" + number));
+            return number + " → " + biliVideoNumberTool.a2b(("av" + number));
         } else if ((number.startsWith("BV") || number.startsWith("bv")) && number.length() == 12) {
-            return biliVideoNumberTool.b2a(number);
+            return number + " → " + biliVideoNumberTool.b2a(number);
         } else
             return "不是AV或BV号！";
     }
