@@ -29,6 +29,6 @@ public class Example {
         } else if ((number.startsWith("BV") || number.startsWith("bv")) && number.length() == 12) {
             return number + " → " + biliVideoNumberTool.b2a(number);
         } else
-            return "不是AV或BV号！";
+            return number + "不是AV或BV号！";
     }
 }
