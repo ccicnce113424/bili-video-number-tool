@@ -1,14 +1,14 @@
 public class biliVideoNumberTool {
     public static final long xor = 177451812;
-    public static final long add = 100618342136696320L;
+    public static final long add = 8728348608L;
     public static final String table = "fZodR9XQDSUm21yCkr6zBqiveYah8bt4xsWpHnJE7jL5VG3guMTKNPAwcF";
-    public static final int[] s = { 11, 10, 3, 8, 4, 6, 2, 9, 5, 7 };
+    public static final int[] s = { 11, 10, 3, 8, 4, 6 };
 
     // av应为以av开头，后面跟纯十进制数字的字符串,如av810872
     public static String a2b(String av) {
         long x = Long.parseLong(av.substring(2));
         x = (x ^ xor) + add;
-        char[] r = "BV          ".toCharArray();
+        char[] r = "BV1  4 1 7  ".toCharArray();
         for (int i = 0; i < s.length; i++) {
             r[s[i]] = table.charAt((int) (x / (long) Math.pow(58, i) % 58));
         }
