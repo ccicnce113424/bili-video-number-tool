@@ -3,7 +3,7 @@
  ~~在此基础上更新了部分参数~~艹，瞎凑的都能骗过我<br>
  功能：B站视频本地avbv号互转，目前可用<br>
  可以用作软件包导入（目前没设包名），也可使用Example在shell进行转换<br>
- Example使用方法:<br>
+ Example使用方法:[下载JAR包](https://github.com/ccicnce113424/bili-video-number-tool/releases)，使用java -jar或用下面的命令自行编译<br>
  ```
  javac -encoding utf8 ./biliVideoNumberTool.java
  javac -encoding utf8 ./Example.java
